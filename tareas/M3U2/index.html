@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGAFILM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
+    <link rel="stylesheet" href="/css/style.css">
+      
+</head>
+<body class="contenedor">
+    <header class="header-area header-fixed">
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand text-white fs-2 fw-bold " href="#">MEGA<span id="logo">FILM</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-3">
+                <a class="nav-link active text-light fw-bold" aria-current="page" href="/index.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/detalle.html">Detalle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/estrenos.html">Estrenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/resenia.html">Reseña</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Peliculas" aria-label="Search">
+              <button class="btn btn-outline-warning bs-light me-5" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+        <section class="banner">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imagenes/banner-black-adam1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/banner-raya.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/baaner-top-gup.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon ms-n1" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon me-n1" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>  
+          </div>
+        </section>
+        
+        <section class="swiper swiper-container1"> 
+          <div class="slide-content">
+            <h3 class="titulos">La mejor seleccion de peliculas</h3> 
+            <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/accion/avatar.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/pixels.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/viaje-al-paraiso.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transporter-legacy.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/vengadores-endgame.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/ninos-grandes2.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/black-adam.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/cuatro-fantasticos.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-justiciero.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-rey-escorpion.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-soldado-de-dios.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/the-game.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/ninos-grandes.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/ip-man-3-dragon-master.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/los-juegos-del-hambre-en-llamas.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/raya-y-el-ultimo-dragon.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/vengadores-infinity-war.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/plan-de-vuelo-desaparecida.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/hotel-transilvania-2.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/jack-y-su-gemela.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/juego-de-gemelas.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/la-boda-de-mi-mejor-amigo.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/mas-alla-de-los-sueños.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-codigo-da-vinci.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/suspenso-drama/el-juego-perfecto.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-patriota.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-silencio-de-los-corderos.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-ultimo-samurai.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                <img src="/imagenes/home/comedia/algo-pasa-con-mary.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/click.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/descubriendo-a-los-robinsons.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/familia-al-instante.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/invencible.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/juego-de-honor.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/thor-love-and-thunder.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/top-gun-maverick.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-3-el-lado-oscuro-de-la-luna.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-el-ultimo-caballero.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-la-era-de-la-extincion.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transporter-2.jpeg" alt="#" class="card-img">
+                </div>            
+              </div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-paginacion"></div>             
+          </div>
+        </section>
+
+        <section class="swiper swiper-container1"> 
+          <div class="slide-content">
+            <h3 class="titulos">Películas de acción, aventura y ciencia ficcion</h3>
+            <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/accion/black-adam.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/cuatro-fantasticos.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-justiciero.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-rey-escorpion.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/el-soldado-de-dios.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/ip-man-3-dragon-master.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/los-juegos-del-hambre-en-llamas.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/raya-y-el-ultimo-dragon.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/thor-love-and-thunder.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/top-gun-maverick.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-3-el-lado-oscuro-de-la-luna.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-el-ultimo-caballero.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers-la-era-de-la-extincion.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transformers.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transporter-2.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/transporter-legacy.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/vengadores-endgame.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/accion/vengadores-infinity-war.jpeg" alt="#">
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-paginacion"></div>       
+          </div>   
+        </section>
+
+        <section class="swiper swiper-container1"> 
+          <div class="slide-content">
+            <h3 class="titulos">Películas de suspenso y drama</h3>  
+            <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/suspenso-drama/el-codigo-da-vinci.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/suspenso-drama/el-juego-perfecto.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-patriota.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-silencio-de-los-corderos.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/el-ultimo-samurai.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/invencible.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/juego-de-honor.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/plan-de-vuelo-desaparecida.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/suspenso-drama/the-game.jpeg" alt="#">
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-paginacion"></div>
+          </div>
+        </section>
+
+        <section class="swiper swiper-container1"> 
+          <div class="slide-content"> 
+            <h3 class="titulos">Películas de comedia</h3>            
+            <div class="card-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/imagenes/home/comedia/algo-pasa-con-mary.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/click.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/descubriendo-a-los-robinsons.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/familia-al-instante.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/hotel-transilvania-2.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/jack-y-su-gemela.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/juego-de-gemelas.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/la-boda-de-mi-mejor-amigo.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/mas-alla-de-los-sueños.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/ninos-grandes.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/ninos-grandes2.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/pixels.jpeg" alt="#">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/imagenes/home/comedia/viaje-al-paraiso.jpeg" alt="#">
+                </div>       
+            </div>  
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-paginacion"></div> 
+          </div>
+        </section>   
+    </main>
+
+    <footer class="footerContenedor">
+      <div class="footerLogo">
+        <div class="footerBrand">
+          <a class="navbar-brand text-white fs-2 fw-bold " href="#">MEGA<span id="logo">FILM</span></a>
+        </div>
+        <span class="text-muted footer">© 2023 Gabriela Breitenberger, Inc</span>
+      </div>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/swiper.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Ejercicio 1 */
+.contenedorUno{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    width: 660px;
+    height: 500px;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+div .contenedorUno{
+    width: 150px;
+    height: 160px;
+}
+
+div .uno{
+    background-color: red;
+    color: white;
+}
+
+div .dos{
+    background-color: blue;
+    color: white;
+}
+
+div .tres{
+    background-color: green;
+    color: white;
+}
+
+/* Ejercicio 2 */
+.contenedorDos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    width: 660px;
+    height: 480px;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 200px;
+}
+
+div .unoReversa{
+    background-color: red;
+    color: white;
+}
+
+div .dosReversa{
+    background-color: blue;
+    color: white;
+}
+
+div .tresReversa{
+    background-color: green;
+    color: white;
+}
+
+/* Ejercicio 3 */
+.contenedorTres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    width: 900px;
+    height: 480px;
+    margin-left: 220px;
+}
+
+div{
+    width: 220px;
+    height: 200px;
+}
+
+div .unoRow{
+    background-color: red;
+    color: white;
+}
+
+div .dosRow{
+    background-color: blue;
+    color: white;
+}
+
+div .tresRow{
+    background-color: green;
+    color: white;
+}

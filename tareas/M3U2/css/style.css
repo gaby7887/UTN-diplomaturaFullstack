@@ -1,0 +1,545 @@
+@charset "utf-8";
+
+/* INICIO ESTILOS GLOBALES */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    height: 100px;
+}
+#logo{
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 0;
+    color: #FFC23C  
+}
+.nav-link{
+    border: none;
+    border-radius: 14px;   
+}
+.nav-link:hover{
+    background-color: /*#1D1CE5;*/ #0014FF;
+}
+.dropdown-menu{
+    background-color: azure;   
+}
+.dropdown-item:hover{
+    background-color: #FFD56F;
+}
+body{
+    height: 1500px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+} 
+.header-area {
+    
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+    right: 0;
+  }
+/* FIN ESTILOS GLOBALES */
+ 
+/* INICIO BANNER */
+.banner{
+    margin-top: 100px;
+}
+.ms-n1{
+    margin-left: -200px;
+}
+.me-n1{
+    margin-right: -200px;
+}
+/* FIN BANNER */
+
+/* INICIO SECCION TIENDA */
+.slide-container{
+    color: #f2e9d6;
+    display: flex;
+    margin-top: 50px;
+}
+.card-wrapper{
+    display: flex;
+    align-items: center;
+}
+.titulos{
+    background-color: black;
+    color: rgb(245, 234, 234);
+    width: 4000px;
+    padding: 40px;
+    margin-left: 0;
+    margin-top: 60px;
+}
+h3{
+    font-weight: 700;
+}
+.swiper-navBtn{
+    color: #8d96f4;
+    transition: color 0.3s ease;
+}
+.swiper {
+    width: 100%;
+    height: 20%;
+  }
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-navBtn:hover{
+    color: #0014FF;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-paginacion-bullet{
+    background-color: #cdd0ef;
+}
+.swiper-paginacion-bullet-active{
+    background-color: #0014FF;
+}
+.swiper-slide{
+    flex-shrink: 0;
+    width: 100%;
+    height: 5%;
+    position: relative;
+    transition-property: transform;
+}
+/* FIN TIENDA */
+
+/* INICIO DETALLE */
+.caja-detalle{
+    height: 1600px;
+    width: auto;
+    color: white;
+    background-image: url(/imagenes/banner-black-adam.jpg);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.subtitulo-detalle{
+   padding-top: 100px;
+    margin-left: 100px;  
+    opacity: 0.3;
+}
+.titulo-detalle{
+    margin-left: 90px;
+    font-weight: 700;
+    font-size: 50px;
+}
+.iconos-info-detalles{
+    margin-top: 250px;
+    margin-left: 480px;
+}
+.trailer{
+    padding-left: 15px;
+}
+.favoritos{
+    padding-left: 15px;
+}
+.compartir{
+    padding-left: 15px;
+}
+.iconos-detal{
+    margin-top: 25px;
+}
+.info-detalles{
+    margin-top: 30px;
+    width: 820px;
+    line-height: 1.9;
+    font-size: 20px;
+    opacity: 0.4;
+}
+mark{
+    margin-left: 15px;
+    background-color: yellow;
+    font-weight: 700;
+}
+span{
+    margin-left: 20px;
+}
+.uhd{
+    background-color: white;
+}
+hr{
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 1100px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #FFFFFF, transparent);
+    opacity: 0.1;   
+}
+.imagenes-detalle{
+    margin-top: 50px;
+    display: flex;      
+}
+.detalle-nombre-titulo{
+    margin-left: 23px;
+}
+.detalle-nombre-titulo1{
+    margin-left: 55px;
+}
+.detalle-nombre-titulo2{
+    margin-left: 45px;
+}
+#director-reparto{
+    opacity: 0.3;
+    font-size: 15px;
+}
+.reparto{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.img-reparto{
+    height: 260px;
+    width: auto;
+    padding-left: 14px;  
+}
+.detalles{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.caja-detalle-detalles{
+    margin-left: 40px;
+}
+.detalle-detalles{
+    display: flex;
+}
+.detalle-detalle{
+    flex-direction: row;
+}
+#idioma{
+    margin-left: 48px;
+    margin-top: 40px;
+    opacity: 0.3;
+}
+#audiencia{
+    margin-left: 300px;
+    margin-top: 40px;
+    opacity: 0.3;
+}
+#puntuacion{
+    margin-left: 180px;
+    margin-top: 40px;
+    opacity: 0.3;
+}
+.span-detalles{
+    margin-left: 48px;
+}
+.span-detalles1{
+    margin-left: 300px;
+}
+#detalle-puntuacion{
+    margin-left: 182px;
+}
+#subtitulos{
+    margin-left: 48px;
+    margin-top: 40px;
+    opacity: 0.3;
+}
+#calidad-video{
+    margin-left: 180px;
+    margin-top: 40px;
+    opacity: 0.3;
+}
+#sh{
+    margin-left: 180px;
+}
+.detalle-detalle2{  
+    margin-top: 60px;
+    margin-left: 309px;
+}
+.tmd{
+    font-weight: 700;
+    font-size: 25px;
+    color: #96dffa;
+}
+
+
+/* FIN DETALLE */
+
+/* INICIO ESTRENOS */
+.contenedorEstrenos{
+    height: 1500px;
+}
+.cajaEstrenos{
+    margin-top: 90px;
+}
+.tituloEstreno{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 10px; 
+}
+.tituloProximamente{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 80px; 
+}
+.video{
+    margin-top: 60px;
+    margin-left: 150px;
+}
+.videoProximamente{
+    margin-top: 60px;
+    margin-left: 470px;
+    font-weight: 600;
+}
+/* FIN ESTRENOS */
+
+/* INICIO RESEñA */
+.contenedorResena{
+    height: 700px;
+}
+
+.banner-directores{
+    height: 390px;
+}
+.directores{
+    margin-top: 60px;
+}
+.caja-peliculas{
+    background-color: black;
+    height: 850px;
+    width: auto;
+}
+.tituloCriticas{
+    padding-top: 60px;
+    margin-left: 160px;
+    color: rgb(240, 232, 232);
+    
+}
+.imagen-criticas{
+    margin-top: 50px; 
+    margin-left: 80px;
+  
+}
+.imagen-critica{
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+.imagenTapa{
+    height: auto;
+    width: 250px;
+    margin-left: 250px;
+   
+}
+.info-critica{
+    display: flex;
+    display: block;
+    margin-left: 90px;
+    padding-right: 250px;
+}
+h4{
+    margin-top: 30px;
+    font-weight: 600;
+    font-weight: 700;
+    color: rgb(240, 232, 232);
+}
+span{
+    font-size: 19px;
+    font-weight: 400;
+}
+.spanParrafo{
+    color: #0014FF;
+    margin-left: 0px;
+}
+.parrafo-critica{
+    margin-left: 90px;
+    margin-top: -25.5px;
+    color: rgb(240, 232, 232);
+    
+}
+.boton-critica{
+    background-color: #b1b7f7;
+    border-style: none;
+    height: 40px;
+    width: auto;   
+    margin-top: 20px;
+    margin-left: 250px;
+    color: black;
+    border-radius: 14%;
+    border: none;
+    content: "Leer mas";
+}
+.boton-critica:hover{
+    background-color: #0014FF;
+    color: white;
+}
+.info-botton-critica{
+    font-size: 15px; 
+    margin-top: -375px;
+    margin-left: 700px;
+    display: none;
+}
+.mostrar{
+    display: block;
+    content: "Ocultar";
+}
+
+.span-info-botton{
+    font-size: 15px;
+    color: #0014FF;
+    font-weight: 600;
+}
+.parrafo-info-botton{
+    height: 35px;
+    width: 97%;
+    line-height: 0.9; 
+}
+.boton-voto{
+    background-color: rgb(58, 57, 57);
+    height: 40px;
+    width: auto;   
+    margin-top: -15px;
+    margin-left: 250px;
+    color: white;
+    border-radius: 10%;
+    border: none;   
+}
+.boton-voto:hover{
+    background-color: #FFC23C;
+    color: black;
+    border: none;    
+}
+.imagenEstrellas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 850px;
+}
+.fa-regular{
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: -45px;
+}
+
+/* FIN RESEñA*/
+
+/* INICIO CONTACTO */
+.cajaImagenes{
+    padding-left: 15px;
+    padding-top: 25px;
+}
+.bannerContacto{
+    height: 180px;   
+}
+.tituloContacto{
+    font-size: xx-large;
+    text-align: center;
+    letter-spacing: 20px; 
+    margin-top: 50px; 
+}
+.mainContacto{
+    margin-top: 50px;
+    height: 900px;
+
+}
+.formulario{
+    height: 900px;
+    background-color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    line-height: 3.4;
+    font-size: 18px;
+    width: 500px;  
+    font-weight: 700;
+}
+
+.check-form{
+    font-size: 18px;
+    line-height: 3.0;
+}
+
+#btnEnviar{
+    width: 140px;
+    height: 40px;
+    background-color: #0014FF;
+    border-style: none;
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+label{
+    color: #272626;
+}
+label.nombre{
+    width: 90px;
+}
+label.email{
+    width: 90px;
+}
+label.telefono{
+    width: 90px;
+}
+input{
+    border-radius: 5px;
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: #d9d5d7;
+    width: 400px;
+    padding-left: 15px;
+    
+}
+.form-textarea{
+    margin-top: 5px;
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: #d9d5d7;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+::-webkit-input-placeholder {
+    color: #aaa4a7;
+   }
+.check-input{
+    overflow: visible;
+    width: 30px;
+}
+#footerLogoContacto{
+    margin-top: 420px;
+}
+
+/* FIN CONTACTO */
+
+/* INICIO FOOTER*/
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 290px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.footer{
+    color: white !important;
+    opacity: 0.5;
+}
+/* FIN FOOTER */

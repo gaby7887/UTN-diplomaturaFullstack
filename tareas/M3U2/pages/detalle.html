@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,600&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+</head>
+<body class="contenedorDetalle">
+    <header class="header-area header-fixed">
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid ms-5">
+              <a class="navbar-brand text-white fs-2 fw-bold " href="#">MEGA<span id="logo">FILM</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ms-3">
+                    <a class="nav-link active text-light fw-bold" aria-current="page" href="/index.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/detalle.html">Detalle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/estrenos.html">Estrenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/resenia.html">Reseña</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Peliculas" aria-label="Search">
+                  <button class="btn btn-outline-warning bs-light me-5" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>     
+    </header>
+
+    <main>
+      <div class="caja-detalle">
+        <div class="titulos-detalles">
+          <h6 class="subtitulo-detalle"> Acción - Aventura - Ciencia ficción </h6>
+          <h1 class="titulo-detalle">Black Adam</h1>
+        </div>
+        <div>
+          <div class="iconos-info-detalles">
+            <div class="iconos-detalles">
+              <i class="fa-regular fa-circle-play"></i><span class="trailer">Tráiler</span>
+              <i class="fa-regular fa-plus"></i><span class="favoritos">Favoritos</span>           
+              <i class="fa-solid fa-square-share-nodes compartir"></i><span class="compartir">Compartir</span>
+            </div>
+            <div class="iconos-detal">
+              <mark>IMDb</mark><span >6.9</span><span>2022</span><span>125min</span>
+              <mark class="uhd">UHD</mark><span>5.1</span><span>ATMOS</span><span>12</span>
+            </div>
+            <p class="info-detalles">
+              Casi 5000 años después de recibir los poderes omnipresentes de los dioses 
+              egipcios y acabar preso, Black Adam (Johnson) es liberado de su tumba 
+              terrenal y se dispone a dar forma al mundo moderno con su particular sentido 
+              de la justicia.
+            </p>
+          </div>
+          <hr>
+          <div class="reparto-detalle">
+            <h4 class="reparto">Director y reparto</h4>
+            <div class="imagenes-detalle">
+              <div class="detalle-nombres">
+                <img src="/imagenes/detalle/director.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo">Jaume Collet-Serra</p><span id="director-reparto">Director</span>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo">Dwayne Johnson</p>
+              </div> 
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto1.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo1">Aldis Hodge</p>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto2.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo2">Pierce Brosnan</p>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto3.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo2">Noah Centineo</p>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto4.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo2">Sarah Shahi</p>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto5.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo2">Marwan Kenzari</p>
+              </div>
+              <div class="img-detal">
+                <img src="/imagenes/detalle/reparto6.jpg" alt="" class="img-reparto">
+                <p class="detalle-nombre-titulo">Marwan Quintessa</p>
+              </div>                         
+            </div>
+      </div>
+      <hr>
+      <div class="caja-detalle-detalles">
+        <h4 class="detalles">Detalles</h4>
+        <div class="detalle-detalles">
+          <div class="detalle-detalle">
+            <h5 class="detalle" id="idioma">Idioma de audio</h5>
+            <span class="span-detalles">Inglés, Español</span>
+          </div>
+          <div class="detalle-detalle">
+            <h5 class="detalle" id="audiencia">Audiencia</h5>
+            <span class="span-detalles1">No recomendada para menores de 12 años</span>
+          </div>
+          <div class="detalle-detalle">
+            <h5 class="detalle" id="puntuacion">Puntuación</h5>
+            <mark id="detalle-puntuacion">IMDb</mark><span>6.9/10</span>
+          </div>
+        </div> 
+        <div class="detalle-detalles">
+          <div class="detalle-detalle">
+            <h5 class="detalle" id="subtitulos">Subtítulos</h5>
+            <span class="span-detalles" id="idioma-subtitulo">Inglés, Español, Sin Subtítulos</span>
+          </div>
+          <div class="detalle-detalle">
+            <h5 class="detalle" id="calidad-video">Calidad de vídeo</h5>
+            <span class="span-detalles1" id="sh">SD, HD, UHD, HDR10, HDR10+</span>
+          </div>
+          <div class="detalle-detalle2">
+            <strong class="tmd">T M D B</strong><span>7.22/10</span>
+          </div>
+        </div> 
+      </div>                
+    </main>
+
+    <footer class="footerContenedor">
+        <div class="footerLogo">
+          <div class="footerBrand">
+            <a class="navbar-brand text-white fs-2 fw-bold " href="#">MEGA<span id="logo">FILM</span></a>
+          </div>
+          <span class="text-muted footer">© 2023 Gabriela Breitenberger, Inc</span>
+        </div>
+      </footer>
+  
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="/js/app.js"></script>
+  </body>
+  </html>

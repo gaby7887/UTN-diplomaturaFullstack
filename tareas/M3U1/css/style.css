@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* INICIO ESTILOS GLOBALES */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    height: 100px;
+}
+#logo{
+    color: #FFC23C
+}
+.nav-link{
+    border: none;
+    border-radius: 14px;   
+}
+.nav-link:hover{
+    background-color: /*#1D1CE5;*/ #0014FF;
+}
+.dropdown-menu{
+    background-color: azure;   
+}
+.dropdown-item:hover{
+    background-color: #FFD56F;
+}
+body{
+    height: 2400px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+} 
+.header-area {
+    
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+    right: 0;
+  }
+/* FIN ESTILOS GLOBALES */
+ 
+/* INICIO BANNER */
+.banner{
+    margin-top: 100px;
+}
+.ms-n1{
+    margin-left: -200px;
+}
+.me-n1{
+    margin-right: -200px;
+}
+/* FIN BANNER */
+
+/* INICIO SECCION TIENDA */
+.slide-container{
+    color: #f2e9d6;
+    display: flex;
+    margin-top: 50px;
+}
+.card-wrapper{
+    display: flex;
+    align-items: center;
+}
+.titulos{
+    background-color: black;
+    color: rgb(245, 234, 234);
+    width: 4000px;
+    padding: 40px;
+    margin-left: 0;
+    margin-top: 60px;
+}
+h3{
+    font-weight: 700;
+}
+.swiper-navBtn{
+    color: #8d96f4;
+    transition: color 0.3s ease;
+}
+.swiper {
+    width: 100%;
+    height: 20%;
+  }
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-navBtn:hover{
+    color: #0014FF;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-paginacion-bullet{
+    background-color: #cdd0ef;
+}
+.swiper-paginacion-bullet-active{
+    background-color: #0014FF;
+}
+.swiper-slide{
+    flex-shrink: 0;
+    width: 100%;
+    height: 5%;
+    position: relative;
+    transition-property: transform;
+}
+/* FIN TIENDA */
+
+/* INICIO ESTRENOS */
+.contenedorEstrenos{
+    height: 1500px;
+}
+.cajaEstrenos{
+    margin-top: 90px;
+}
+.tituloEstreno{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 10px; 
+}
+.tituloProximamente{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 80px; 
+}
+.video{
+    margin-top: 60px;
+    margin-left: 150px;
+}
+.videoProximamente{
+    margin-top: 60px;
+    margin-left: 470px;
+    font-weight: 600;
+}
+/* FIN ESTRENOS */
+
+/* INICIO FOOTER*/
+.footerContenedor{
+    margin-top: 50px;
+    display: flex;
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 650px;
+}
+.footer{
+    color: white !important;
+    opacity: 0.5;
+}
+/* FIN FOOTER */
