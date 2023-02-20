@@ -1,0 +1,145 @@
+.caja-detalle{
+    height: 1600px;
+    width: auto;
+    color: white;
+    background-image: url(../../imagenes/banner-black-adam.jpg);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.subtitulo-detalle{
+    padding-top: 100px;
+     margin-left: 100px;  
+     opacity: 0.3;
+ }
+ .titulo-detalle{
+     margin-left: 90px;
+     font-weight: 700;
+     font-size: 50px;
+ }
+ .iconos-info-detalles{
+     margin-top: 250px;
+     margin-left: 480px;
+ }
+ .trailer{
+     padding-left: 15px;
+ }
+ .favoritos{
+     padding-left: 15px;
+ }
+ .compartir{
+     padding-left: 15px;
+ }
+ .iconos-detal{
+     margin-top: 25px;
+ }
+ .info-detalles{
+     margin-top: 30px;
+     width: 820px;
+     line-height: 1.9;
+     font-size: 20px;
+     opacity: 0.4;
+ }
+ mark{
+     margin-left: 15px;
+     background-color: yellow;
+     font-weight: 700;
+ }
+ span{
+     margin-left: 20px;
+ }
+ .uhd{
+     background-color: white;
+ }
+ hr{
+     margin-top: 80px;
+     margin-left: 200px;
+     width: 1100px;
+     height: 4px;
+     background: linear-gradient(to right, transparent, #FFFFFF, transparent);
+     opacity: 0.1;   
+ }
+ .imagenes-detalle{
+     margin-top: 50px;
+     display: flex;      
+ }
+ .detalle-nombre-titulo{
+     margin-left: 23px;
+ }
+ .detalle-nombre-titulo1{
+     margin-left: 55px;
+ }
+ .detalle-nombre-titulo2{
+     margin-left: 45px;
+ }
+ #director-reparto{
+     opacity: 0.3;
+     font-size: 15px;
+ }
+ .reparto{
+     margin-left: 50px;
+     margin-top: 80px;
+ }
+ .img-reparto{
+     height: 260px;
+     width: auto;
+     padding-left: 14px;  
+ }
+ .detalles{
+     margin-left: 50px;
+     margin-top: 80px;
+ }
+ .caja-detalle-detalles{
+     margin-left: 40px;
+ }
+ .detalle-detalles{
+     display: flex;
+ }
+ .detalle-detalle{
+     flex-direction: row;
+ }
+ #idioma{
+     margin-left: 48px;
+     margin-top: 40px;
+     opacity: 0.3;
+ }
+ #audiencia{
+     margin-left: 300px;
+     margin-top: 40px;
+     opacity: 0.3;
+ }
+ #puntuacion{
+     margin-left: 180px;
+     margin-top: 40px;
+     opacity: 0.3;
+ }
+ .span-detalles{
+     margin-left: 48px;
+ }
+ .span-detalles1{
+     margin-left: 300px;
+ }
+ #detalle-puntuacion{
+     margin-left: 182px;
+ }
+ #subtitulos{
+     margin-left: 48px;
+     margin-top: 40px;
+     opacity: 0.3;
+ }
+ #calidad-video{
+     margin-left: 180px;
+     margin-top: 40px;
+     opacity: 0.3;
+ }
+ #sh{
+     margin-left: 180px;
+ }
+ .detalle-detalle2{  
+     margin-top: 60px;
+     margin-left: 309px;
+ }
+ .tmd{
+     font-weight: 700;
+     font-size: 25px;
+     color: #96dffa;
+ }

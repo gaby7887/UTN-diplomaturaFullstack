@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* INICIO ESTILOS GLOBALES */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 1500px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+} 
+.header-area {
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+    right: 0;
+  }
+/* FIN ESTILOS GLOBALES */

@@ -1,0 +1,28 @@
+.cajaEstrenos{
+    margin-top: 100px;
+}
+.tituloEstreno{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 10px; 
+}
+.tituloProximamente{
+    color: rgb(243, 237, 237);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 30px; 
+    margin-top: 80px; 
+}
+.video{
+    margin-top: 60px;
+    margin-left: 150px;
+}
+.videoProximamente{
+    margin-top: 60px;
+    margin-left: 470px;
+    font-weight: 600;
+}

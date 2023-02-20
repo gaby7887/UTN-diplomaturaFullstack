@@ -1,0 +1,25 @@
+.navbar{
+    height: 100px;
+}
+#logo{
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 0;
+    color: #FFC23C  
+}
+.nav-link{
+    border: none;
+    border-radius: 14px;   
+}
+.nav-link:hover{
+    background-color: /*#1D1CE5;*/ #0014FF;
+}
+.dropdown-menu{
+    background-color: azure;   
+}
+.dropdown-item:hover{
+    background-color: #FFD56F;
+}
+.form-control{
+    height: 40px;
+}
