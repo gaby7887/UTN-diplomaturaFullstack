@@ -13,6 +13,7 @@
 .slide-content{
     color: #f2e9d6;
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
 }
 .card-wrapper{
@@ -32,14 +33,10 @@ h3{
 }
 .swiper-slide{
     flex-shrink: 0;
-    width: 100%;
+    width: 210px !important;
     height: 5%;
     position: relative;
     transition-property: transform;
-}
-.swiper-navBtn{
-    color: #8d96f4;
-    transition: color 0.3s ease;
 }
 .swiper {
     width: 100%;
@@ -51,14 +48,14 @@ h3{
     height: 100%;
     object-fit: cover;
 }
-.swiper-navBtn:hover{
-    color: #0014FF;
+.swiper-button-next,
+.swiper-button-prev {
+    color: #8d96f4;
+    transition: color 0.3s ease;
 }
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 80px;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #0014FF;
 }
 .swiper-button-next{
     right: 0;
@@ -66,9 +63,6 @@ h3{
 .swiper-button-prev{
     left: 0;
 }
-.swiper-paginacion-bullet{
+.swiper-paginacion{
     background-color: #cdd0ef;
-}
-.swiper-paginacion-bullet-active{
-    background-color: #0014FF;
 }

@@ -1,6 +1,11 @@
 import React from "react";
-import '../styles/pages/TiendaPage.css';
-import '../swiper/Swiper.js';
+import "../styles/pages/TiendaPage.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Navigation, Pagination } from "swiper";
 
 //IMAGENES
 import blackAdam from '../imagenes/banner-black-adam1.png';
@@ -84,292 +89,324 @@ const TiendaPage = () => {
             <section className="swiper swiper-container1"> 
             <div className="slide-content">
               <h3 className="titulos">La mejor seleccion de peliculas</h3> 
-              <div className="card-wrapper swiper-wrapper">
-                  <div className="swiper-slide">
-                      <img src={avatar} alt="avatar" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={pixels} alt="pixels" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={viajeParaiso} alt="viajeParaiso" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transporteLegacy} alt="transporteLegacy" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={vengadores} alt="vengadores" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={niniosGrandes2} alt="niniosGrandes2" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={blackAdamTapa} alt="blackAdam" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={cuatroFantasticos} alt="cuatroFantasticos" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={justiciero} alt="justiciero" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={reyEscorpion} alt="reyEscorpion" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={soldadoDeDios} alt="soldadoDeDios" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={theGame} alt="theGame" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={niniosGrandes} alt="niniosGrandes" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={ipMan3} alt="ipMan3" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={losJuegosDelHambre} alt="losJuegosDelHambre" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={rayaTapa} alt="raya" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={vengadoresInfinity} alt="vengadoresInfinity" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={planDeVuelo} alt="planDeVuelo" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={hotelTransilvania2} alt="hotelTransilvania2" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={jackYGemelas} alt="jackYGemelas" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={juegoDeGemelas} alt="juegoDeGemelas" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={laBodaDeMiMejorAmigo} alt="laBodaDeMiMejorAmigo" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={masAllaDeLosSuenios} alt="masAllaDeLosSuenios" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elCodigoDavinci} alt="elCodigoDaVinci" />
-                  </div>
-                  <div className="swiper-slide">
-                      <img src={elJuegoPerfecto} alt="elJuegoPerfecto" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elPatriota} alt="elPatriota" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elSilencioDeLosCorderos} alt="elSilencioDeLosCorderos" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elUltimoSamurai} alt="elUltimoSamurai" />
-                  </div>
-                  <div className="swiper-slide">
+
+              <Swiper
+                slidesPerView={7}
+                spaceBetween={10}
+                navigation={true}
+                pagination={{
+                  clickable: true
+                }}
+                modules={[Pagination, Navigation]}
+                className='mySwiper'
+              >
+                <SwiperSlide>
+                  <img src={avatar} alt="avatar" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={pixels} alt="pixels" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={viajeParaiso} alt="viajeParaiso" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transporteLegacy} alt="transporteLegacy" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={vengadores} alt="vengadores" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={niniosGrandes2} alt="niniosGrandes2" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={blackAdamTapa} alt="blackAdam" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={cuatroFantasticos} alt="cuatroFantasticos" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={justiciero} alt="justiciero" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={reyEscorpion} alt="reyEscorpion" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={soldadoDeDios} alt="soldadoDeDios" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={theGame} alt="theGame" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={niniosGrandes} alt="niniosGrandes" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ipMan3} alt="ipMan3" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={losJuegosDelHambre} alt="losJuegosDelHambre" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={rayaTapa} alt="raya" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={vengadoresInfinity} alt="vengadoresInfinity" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={planDeVuelo} alt="planDeVuelo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={hotelTransilvania2} alt="hotelTransilvania2" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={jackYGemelas} alt="jackYGemelas" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={juegoDeGemelas} alt="juegoDeGemelas" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={laBodaDeMiMejorAmigo} alt="laBodaDeMiMejorAmigo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={masAllaDeLosSuenios} alt="masAllaDeLosSuenios" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elCodigoDavinci} alt="elCodigoDaVinci" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elJuegoPerfecto} alt="elJuegoPerfecto" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elPatriota} alt="elPatriota" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elSilencioDeLosCorderos} alt="elSilencioDeLosCorderos" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elUltimoSamurai} alt="elUltimoSamurai" />
+                </SwiperSlide>
+                <SwiperSlide>
                   <img src={algoPasaConMary} alt="algoPasaConMary" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={click} alt="click" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={descubriendoALosRobinson} alt="descubriendoALosRobinson" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={familiaAlInstante} alt="familiaAlInstante" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={invencible} alt="invencible" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={juegoDeHonor} alt="juegoDeHonor" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={thorLove} alt="thorLove" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={topGunMaverick} alt="topGunMaverick" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformers3} alt="transformers3" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformersElUltimoCaballero} alt="transformersElUltimoCaballero" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformersLaEraDeLaExtincion} alt="transformersLaEraDeLaExtincion" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformers} alt="transformers" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transporter2} alt="transporter2" className="card-img" />
-                  </div>            
-                </div>
-                <div className="swiper-button-prev swiper-navBtn"></div>
-                <div className="swiper-button-next swiper-navBtn"></div>
-                <div className="swiper-paginacion"></div>             
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={click} alt="click" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={descubriendoALosRobinson} alt="descubriendoALosRobinson" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={familiaAlInstante} alt="familiaAlInstante" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={invencible} alt="invencible" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={juegoDeHonor} alt="juegoDeHonor" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={thorLove} alt="thorLove" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={topGunMaverick} alt="topGunMaverick" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformers3} alt="transformers3" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformersElUltimoCaballero} alt="transformersElUltimoCaballero" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformersLaEraDeLaExtincion} alt="transformersLaEraDeLaExtincion" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformers} alt="transformers" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transporter2} alt="transporter2" className="card-img" />
+                </SwiperSlide>
+              </Swiper>
+                  
             </div>
           </section>
 
           <section className="swiper swiper-container1"> 
             <div className="slide-content">
               <h3 className="titulos">Películas de acción, aventura y ciencia ficcion</h3>
-              <div className="card-wrapper swiper-wrapper">
-                  <div className="swiper-slide">
-                      <img src={blackAdamTapa} alt="blackAdam" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={cuatroFantasticos} alt="cuatroFantasticos" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={justiciero} alt="justiciero" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={reyEscorpion} alt="reyEscorpion" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={soldadoDeDios} alt="soldadoDeDios" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={ipMan3} alt="ipMan3" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={losJuegosDelHambre} alt="losJuegosDelHambre" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={rayaTapa} alt="rayaTapa" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={thorLove} alt="thorLove" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={topGunMaverick} alt="topGunMaverick" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformers3} alt="transformers3" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformersElUltimoCaballero} alt="transformersElUltimoCaballero" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformersLaEraDeLaExtincion} alt="transformersLaEraDeLaExtincion" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transformers} alt="transformers" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transporter2} alt="transporter2" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={transporteLegacy} alt="transporteLegacy" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={vengadores} alt="vengadores" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={vengadoresInfinity} alt="vengadoresInfinity" />
-                  </div>
-              </div>
-              <div className="swiper-button-prev swiper-navBtn"></div>
-              <div className="swiper-button-next swiper-navBtn"></div>
-              <div className="swiper-paginacion"></div>       
+
+              <Swiper
+                slidesPerView={7}
+                spaceBetween={10}
+                navigation={true}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination, Navigation]}
+                className='mySwiper'
+              >
+                <SwiperSlide>
+                  <img src={blackAdamTapa} alt="blackAdam" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={cuatroFantasticos} alt="cuatroFantasticos" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={justiciero} alt="justiciero" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={reyEscorpion} alt="reyEscorpion" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={soldadoDeDios} alt="soldadoDeDios" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ipMan3} alt="ipMan3" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={losJuegosDelHambre} alt="losJuegosDelHambre" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={rayaTapa} alt="rayaTapa" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={thorLove} alt="thorLove" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={topGunMaverick} alt="topGunMaverick" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformers3} alt="transformers3" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformersElUltimoCaballero} alt="transformersElUltimoCaballero" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformersLaEraDeLaExtincion} alt="transformersLaEraDeLaExtincion" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transformers} alt="transformers" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transporter2} alt="transporter2" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={transporteLegacy} alt="transporteLegacy" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={vengadores} alt="vengadores" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={vengadoresInfinity} alt="vengadoresInfinity" />
+                </SwiperSlide>    
+              </Swiper>
+    
+           
             </div>   
           </section>
 
           <section className="swiper swiper-container1"> 
             <div className="slide-content">
               <h3 className="titulos">Películas de suspenso y drama</h3>  
-              <div className="card-wrapper swiper-wrapper">
-                  <div className="swiper-slide">
-                      <img src={elCodigoDavinci} alt="elCodigoDavinci" />
-                  </div>
-                  <div className="swiper-slide">
-                      <img src={elJuegoPerfecto} alt="elJuegoPerfecto" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elPatriota} alt="elPatriota" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elSilencioDeLosCorderos} alt="elSilencioDeLosCorderos" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={elUltimoSamurai} alt="elUltimoSamurai" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={invencible} alt="invencible" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={juegoDeHonor} alt="juegoDeHonor" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={planDeVuelo} alt="planDeVuelo" />
-                  </div>
-                  <div className="swiper-slide">
-                    <img src={theGame} alt="theGame" />
-                  </div>
-              </div>
-              <div className="swiper-button-prev swiper-navBtn"></div>
-              <div className="swiper-button-next swiper-navBtn"></div>
-              <div className="swiper-paginacion"></div>
+
+              <Swiper
+                slidesPerView={7}
+                spaceBetween={10}
+                navigation={true}
+                pagination={{
+                  clickable: true
+                }}
+                modules={[Pagination, Navigation]}
+                className='mySwiper'
+              >
+                <SwiperSlide>
+                  <img src={elCodigoDavinci} alt="elCodigoDavinci" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elJuegoPerfecto} alt="elJuegoPerfecto" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elPatriota} alt="elPatriota" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elSilencioDeLosCorderos} alt="elSilencioDeLosCorderos" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={elUltimoSamurai} alt="elUltimoSamurai" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={invencible} alt="invencible" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={juegoDeHonor} alt="juegoDeHonor" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={planDeVuelo} alt="planDeVuelo" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={theGame} alt="theGame" />
+                </SwiperSlide>
+              </Swiper>
+              
             </div>
           </section>
 
           <section className="swiper swiper-container1"> 
             <div className="slide-content"> 
-              <h3 className="titulos">Películas de comedia</h3>            
-              <div className="card-wrapper swiper-wrapper">
-                  <div className="swiper-slide">
-                      <img src={algoPasaConMary} alt="algoPasaConMary" />
-                  </div>
-                  <div className="swiper-slide">
+              <h3 className="titulos">Películas de comedia</h3> 
+
+              <Swiper
+                slidesPerView={7}
+                spaceBetween={10}
+                navigation={true}
+                pagination={{
+                  clickable: true
+                }}
+                modules={[Pagination, Navigation]}
+                className='mySwiper'
+              >
+                  <SwiperSlide>
+                    <img src={algoPasaConMary} alt="algoPasaConMary" />
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={click} alt="click" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={descubriendoALosRobinson} alt="descubriendoALosRobinson" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={familiaAlInstante} alt="familiaAlInstante" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={hotelTransilvania2} alt="hotelTransilvania2" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={jackYGemelas} alt="jackYGemelas" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={juegoDeGemelas} alt="juegoDeGemelas" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={laBodaDeMiMejorAmigo} alt="laBodaDeMiMejorAmigo" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={masAllaDeLosSuenios} alt="masAllaDeLosSuenios" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={niniosGrandes} alt="niniosGrandes" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={niniosGrandes2} alt="niniosGrandes2" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={pixels} alt="pixels" />
-                  </div>
-                  <div className="swiper-slide">
+                  </SwiperSlide>
+                  <SwiperSlide>
                     <img src={viajeParaiso} alt="viajeParaiso" />
-                  </div>       
-              </div>  
-              <div className="swiper-button-prev swiper-navBtn"></div>
-              <div className="swiper-button-next swiper-navBtn"></div>
-              <div className="swiper-paginacion"></div> 
+                  </SwiperSlide>       
+              </Swiper> 
+
             </div>
           </section>
-
         </main>
-    )
-}
+    );
+};
 
 export default TiendaPage;
