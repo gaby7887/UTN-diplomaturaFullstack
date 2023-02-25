@@ -19,7 +19,9 @@
 }
 .video{
     margin-top: 60px;
-    margin-left: 150px;
+    margin-left: 180px;
+    display: flex;
+    gap: 20px;
 }
 .videoProximamente{
     margin-top: 60px;

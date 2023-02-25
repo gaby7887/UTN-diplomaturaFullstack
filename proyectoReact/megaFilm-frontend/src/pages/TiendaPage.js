@@ -237,7 +237,7 @@ const TiendaPage = () => {
                 spaceBetween={10}
                 navigation={true}
                 pagination={{
-                  clickable: true,
+                  clickable: true
                 }}
                 modules={[Pagination, Navigation]}
                 className='mySwiper'
