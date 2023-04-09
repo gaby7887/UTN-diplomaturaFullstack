@@ -12,10 +12,11 @@ h2{
 /* INICIO ESTILOS GLOBALES */
 body{
     font-family: 'Montserrat', sans-serif;
+    color:white;
 }
 
 body{
-    height: 1500px;
+    height: 700px;
     background: black;
     display: flex;
     flex-direction: column;
@@ -36,13 +37,52 @@ body{
   border-radius: 14px;   
 }
 
+/* LOGIN */
+.formLogin {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 3.4;
+  
+}
+.form-text,.col-form-label {
+  color: white;
+  opacity: 0.3;
+}
+.btn {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+.col-auto{
+  width: 400px;
+  margin-left: 500px;
+}
+.contenedor {
+  margin-top: 70px;
+  text-align: center;
+
+}
+.btnCerrar {
+  width: 130px;
+  margin-top: 60px;
+  text-align: center;
+  margin-left: 700px;
+  
+}
+.textEnd {
+  font-size: 26px;
+  
+}
+
+/* LOGIN */
 
 /* INICIO FOOTER */
 .footerLogo{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 290px;
+  margin-top: 200px;
   margin-bottom: 10px;
   margin-left: 30px;
 }
