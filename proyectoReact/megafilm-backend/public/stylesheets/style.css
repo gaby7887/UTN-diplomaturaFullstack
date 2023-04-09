@@ -51,7 +51,7 @@ body{
 }
 .btn {
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 160px;
 }
 .col-auto{
@@ -61,7 +61,6 @@ body{
 .contenedor {
   margin-top: 70px;
   text-align: center;
-
 }
 .btnCerrar {
   width: 130px;
@@ -71,10 +70,14 @@ body{
   
 }
 .textEnd {
-  font-size: 26px;
-  
+  font-size: 26px; 
 }
+.textoContraseniaIncorrecta {
+  margin-left: 500px;
+  margin-top: -100px;
+  color: white;
 
+}
 /* LOGIN */
 
 /* INICIO FOOTER */
