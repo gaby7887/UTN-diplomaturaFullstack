@@ -41,44 +41,116 @@ body{
 .formLogin {
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  line-height: 3.4;
-  
+  margin-top: 10px;
 }
-.form-text,.col-form-label {
+.form-text .col-form-label {
   color: white;
   opacity: 0.3;
 }
 .btn {
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 160px;
 }
-.col-auto{
+.btnIngresar {
+  margin-left: 0;
+  margin-top: 0;
+}
+#passwordHelpInline {
+  color: white;
+  opacity: 0.5;
+}
+.formLogin .col-auto {
   width: 400px;
   margin-left: 500px;
+  line-height: 4.1;
 }
 .contenedor {
   margin-top: 70px;
+  margin-left: 30px;
   text-align: center;
+  line-height: 1.4;
 }
 .btnCerrar {
   width: 130px;
-  margin-top: 60px;
+  margin-top: -37px;
   text-align: center;
-  margin-left: 700px;
+  margin-left: 900px;
   
 }
 .textEnd {
   font-size: 26px; 
+  margin-top: -10px;
 }
+
 .textoContraseniaIncorrecta {
   margin-left: 500px;
   margin-top: -100px;
   color: white;
 
 }
+.btnNuevo {
+  width: 100px;
+  margin-left: 1000px;
+  margin-top: -85px;
+  padding-top: 5px;
+  text-align: center;
+}
+.texNovedad {
+  margin-top: 40px;
+  justify-content: center;
+}
+i.fa-sharp{
+  padding-top: 5px;
+}
+.table {
+  width: 1200px;
+  margin-left: 140px;
+}
+
 /* LOGIN */
+
+/* AGREGAR */
+.contenedorNovedad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.formAgregar .col-auto {
+  margin-left: 20px;
+  margin-top: 30px;
+  line-height: 5.4;
+  width: 500px;
+}
+.tituloNovedad {
+  font-size: 25px;
+  color: white;
+  opacity: 0.7;
+}
+.btnGuardar {
+  margin-left: 0;
+}
+
+/*INICIO MODIFICAR*/
+.tituloNovedadModificar {
+  margin-top: -50px;
+  opacity: 0.7;
+}
+
+.col-auto-modificar {
+  margin-left: 20px;
+  margin-top: 20px;
+  line-height: 2.4;
+  width: 500px;
+}
+.btnModificar {
+  margin-left: 0;
+  margin-top: 50px;
+}
+.tituloModificar {
+  opacity: 0.7;
+}
 
 /* INICIO FOOTER */
 .footerLogo{

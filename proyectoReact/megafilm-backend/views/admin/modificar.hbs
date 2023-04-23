@@ -1,0 +1,29 @@
+<div class="contenedorNovedad">
+    <h4 class="tituloNovedadModificar">Modificar una novedad</h4>
+    <form class="formAgregar" action="/admin/novedades/modificar" method="post">
+        <div class="col-auto-modificar">
+            <label class="tituloModificar">Titulo</label>
+            <input
+                type="hidden"
+                value="{{novedad.id}}"  
+                name="id">
+            <input 
+                type="text" 
+                class="form-control" 
+                name="titulo"
+                value="{{novedad.titulo}}">
+        </div>
+        <div class="col-auto-modificar">
+            <label class="tituloModificar">Novedad</label>
+            <textarea type="text" 
+                class="form-control" 
+                name="cuerpo">{{novedad.cuerpo}}</textarea>
+        </div>        
+        <div class="col-auto-modificar">
+            <button type="submit" class="btn btn-primary mb-3 btnModificar">Modificar</button>
+        </div>
+    </form>
+    {{#if error}}
+        <p>{{message}}</p>
+    {{/if}}
+</div>
