@@ -1,3 +1,7 @@
+#imagenGif{
+    margin-top: -70px;
+    margin-left: 500px;   
+}
 .banner-directores{
     height: 390px;
 }
@@ -6,46 +10,39 @@
 }
 .caja-peliculas{
     background-color: black;
-    height: 850px;
+    height: 350px;
     width: auto;
 }
 .tituloCriticas{
     padding-top: 60px;
     margin-left: 160px;
-    color: rgb(240, 232, 232);
-    
+    color: rgb(240, 232, 232);  
+    font-weight: 500; 
 }
 .imagen-criticas{
     margin-top: 50px; 
-    margin-left: 80px;
-  
+    margin-left: 80px; 
 }
 .imagen-critica{
-    margin-left: 0;
     display: flex;
     flex-direction: row;
 }
 .imagenTapa{
-    height: auto;
-    width: 250px;
-    margin-left: 250px;
-   
+    margin-left: 250px; 
+}
+h3, #titulo-critica{
+    color: white;
+}
+h5, #subtitulo-critica{
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
 }
 .info-critica{
     display: flex;
     display: block;
     margin-left: 90px;
-    padding-right: 250px;
-}
-h4{
-    margin-top: 30px;
-    font-weight: 600;
-    font-weight: 700;
-    color: rgb(240, 232, 232);
-}
-span{
-    font-size: 19px;
-    font-weight: 400;
+    padding-right: 80px;
 }
 .spanParrafo{
     color: #0014FF;
@@ -55,73 +52,6 @@ span{
     margin-left: 90px;
     margin-top: -25.5px;
     color: rgb(240, 232, 232);
+    opacity: 0.7;
     
-}
-.boton-critica{
-    background-color: #b1b7f7;
-    border-style: none;
-    height: 40px;
-    width: 90px;   
-    margin-top: 20px;
-    margin-left: 250px;
-    color: black;
-    border-radius: 14%;
-    border: none;
-    content: "Leer mas";
-}
-.boton-critica:hover{
-    background-color: #0014FF;
-    color: white;
-}
-.info-botton-critica{
-    font-size: 15px; 
-    margin-top: -375px;
-    margin-left: 700px;
-    display: none;
-}
-.mostrar{
-    display: block;
-    content: "Ocultar";
-}
-
-.span-info-botton{
-    font-size: 15px;
-    color: #0014FF;
-    font-weight: 600;
-}
-.parrafo-info-botton{
-    height: 35px;
-    width: 97%;
-    line-height: 0.9; 
-}
-.boton-voto{
-    background-color: rgb(58, 57, 57);
-    height: 40px;
-    width: auto;   
-    margin-top: -15px;
-    margin-left: 250px;
-    color: white;
-    border-radius: 10%;
-    border: none;   
-}
-.boton-voto:hover{
-    background-color: #FFC23C;
-    color: black;
-    border: none;    
-}
-.imagenEstrellas{
-    display: flex;
-    flex-direction: row;
-    margin-left: 850px;
-}
-.fa-regular{
-    font-size: 30px;
-    padding-left: 10px;
-    margin-top: -45px;
-}
-#iUno, #iDos, #iTres {
-    color: yellow;
-}
-#uno, #dos, #tres, #cuatro {
-    color: yellow;
 }

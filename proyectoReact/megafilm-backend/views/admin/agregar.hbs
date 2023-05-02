@@ -1,12 +1,28 @@
 <div class="contenedorNovedad">
     <h4 class="tituloNovedad">Agregar una novedad</h4>
-    <form class="formAgregar" action="/admin/novedades/agregar" method="post">
+    <form class="formAgregar" 
+        action="/admin/novedades/agregar" 
+        method="post" 
+        {{!-- El enctype multipart hace que puedas ingresar texto, imagenes --}}
+        enctype="multipart/form-data"> 
+        <div class="col-auto" >
+            <label>
+                Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /> 
+            </label>
+        </div>
         <div class="col-auto">
             <input 
                 type="text" 
                 class="form-control" 
                 placeholder="Titulo" 
                 name="titulo">
+        </div>
+        <div class="col-auto">
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Subtitulo" 
+                name="subtitulo">
         </div>
         <div class="col-auto">
             <textarea type="text" 

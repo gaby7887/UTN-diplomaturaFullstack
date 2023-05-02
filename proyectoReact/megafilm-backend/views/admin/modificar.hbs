@@ -1,6 +1,7 @@
 <div class="contenedorNovedad">
     <h4 class="tituloNovedadModificar">Modificar una novedad</h4>
-    <form class="formAgregar" action="/admin/novedades/modificar" method="post">
+    <form class="formAgregar" action="/admin/novedades/modificar/{{id}} " method="post"
+    enctype="multipart/form-data"> 
         <div class="col-auto-modificar">
             <label class="tituloModificar">Titulo</label>
             <input
@@ -14,11 +15,29 @@
                 value="{{novedad.titulo}}">
         </div>
         <div class="col-auto-modificar">
+            <label class="tituloModificar">Subtitulo</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                name="subtitulo"
+                value="{{novedad.subtitulo}}">
+        </div>
+        <div class="col-auto-modificar">
             <label class="tituloModificar">Novedad</label>
             <textarea type="text" 
                 class="form-control" 
                 name="cuerpo">{{novedad.cuerpo}}</textarea>
-        </div>        
+        </div> 
+        <div class="col-auto-modificar" >
+            <label>
+                Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /> 
+            </label>
+            <label>
+                <input type="checkbox" name="img_delete" value="1" >
+                    Eliminar imagen actual?
+            </label>
+            <input type="hidden" name="img_original" value="{{novedad.img_id}}" >
+        </div>       
         <div class="col-auto-modificar">
             <button type="submit" class="btn btn-primary mb-3 btnModificar">Modificar</button>
         </div>
