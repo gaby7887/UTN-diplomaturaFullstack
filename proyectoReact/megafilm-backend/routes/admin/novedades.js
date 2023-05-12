@@ -132,8 +132,7 @@ router.post('/modificar/:id', async (req, res, next) => {
       cuerpo: req.body.cuerpo,
       img_id
     }
-    // console.log(obj)
-    // console.log(req.body.id)
+    
 
     await novedadesModel.modificarNovedadById(obj, req.body.id);
     res.redirect('/admin/novedades');
